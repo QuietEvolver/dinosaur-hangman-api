@@ -4,7 +4,7 @@ export class Dinosaurs {
         let data = null;
         let request = new XMLHttpRequest();
         
-        const url = `https://alexnormand-dino-ipsum.p.rapidapi.com/?<p>=" "&format=html&words=10&paragraphs=5`;
+        const url = `https://alexnormand-dino-ipsum.p.rapidapi.com/?<p>=" "`; //&format=html&words=10&paragraphs=5
  //       request.withCredentials = true; // Does this need to be in/out of the fx(req.onload)
         request.onload = function() {
           if (this.status === 200) {

@@ -13,12 +13,12 @@
       <h3>This is your game!<span class = "arrayWinConcatProgress"></span></h3> <!--JS: progress-->
       <form>
           <div class="form-group">
-              <label for="userTurns">Guess: </label>
-              <input id="guess" name="guess" type="text" class="form-control">
+              <label for="dino-letter-guess">Guess: </label>
+              <input maxlength="1" id="dino-letter-guess" name="dino-letter-guess" type="text" class="form-control">
           </div>
-          <button type="submit" class="btn btn-info">Guess!</button>
+          <button id="dino-button" type="submit" class="btn btn-info">Guess!</button>
         </form>
-   <p class="user-misses">missed chars.</p> <!--misses-->
+   <p>missed chars.</p> <!--misses-->
   
    <div>
     <p id="display">game outcome: </p> <!--IF STMT then matching arrays win-->
@@ -26,9 +26,9 @@
       <h2><span class="userGameResult"></span></h2>    
           <p>game details:</p>
           <ul>
-            <li class="showDinosaurName"></li>
-            <li class="showUserMisses"></li>
-            <li class="showDinosaurLetter"></li>
+            <li id="show-dinosaur-name"></li>
+            <li id="show-user-misses"></li>
+            <li id="show-game-message"></li>
           </ul>
     </div>
     <h1>Authors</h1>
